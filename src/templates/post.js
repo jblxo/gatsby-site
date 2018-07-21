@@ -9,7 +9,7 @@ export default function Template({data}) {
         <div>
             <h1>{post.frontmatter.title}</h1>
             <div dangerouslySetInnerHTML={{__html: post.html}} />
-            <Link onClick={ () => push('/')} to={"/"}>Back</Link>
+            <Link to={"/"}>Back</Link>
         </div>
     )
 }
